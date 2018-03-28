@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Emilie Villa</title>
+	</head>
+	<body>
+		<div class="accueil_banniere">
+			<h1 id="titre">Emilie Villa</h1>
+			<h1 id="titre_darkSide">Emilie villa</h1>	
+		</div>
+		
+		
+		<div class="menu">
+			<ul id="menu" class="topnav">
+				<li><a class="leLien" href="index.html">Accueil</a></li>
+				<li><a class="leLien" href="experiences.html">Experiences</a></li>
+				<li><a class="leLien" href="formations.html">Formations</a></li>
+				<li><a class="leLien" href="hobbies.html">Hobbies</a></li>
+				<li class="icon"><a class="leLien" onclick="myFunction()">&#9776;</a></li>
+			</ul>
+		</div>
+		<div class="hobbies">Hobbies</div>
+		<div class="hobbies_bloc">
+			<div class="hobbies_1">
+				<img class="hobbies_1_image" src="img/hobbies_guitare.png" />
+				<div class="hobbies_1_corps">
+					Je fais de la guitare depuis mes 6
+					ans et de la batterie depuis mes 15 ans.
+					C'est mon amour pour le hard-rock 
+					qui m'a poussée à pratiquer ces instruments.					
+				</div>	
+			</div>
+			<div class="hobbies_2">
+				<img class="hobbies_2_image" src="img/hobbies_camera.png" />
+				<div class="hobbies_2_corps">
+					Je regarde beaucoup de séries et de films pendant 
+					mon temps libre. Mes favoris ? Game of Thrones 
+					et Star Wars <div class="hobbies_darkside" onclick="darkSide()">(#DarkSide)</div>
+				</div>	
+			</div>
+			<div class="hobbies_3">
+				<img class="hobbies_3_image" src="img/hobbies_dessin.png" />
+				<div class="hobbies_3_corps">
+					J'aime beaucoup dessiner, créer. 
+					En outre, je crée depuis quelques années 
+					des cartes d'anniversaire faites mains.
+				</div>	
+			</div>
+			<div class="hobbies_4">
+				<img class="hobbies_4_image" src="img/hobbies_photo.png" />
+				<div class="hobbies_4_corps">
+					La photographie, c'est mon dada. Avec mon Nikon
+					D3200 offert pour mes 20 ans, je sillone 
+					les routes à la recherche de paysages à capturer.
+				</div>	
+			</div>
+			<div class="hobbies_5">
+				<img class="hobbies_5_image" src="img/hobbies_design.png" />
+				<div class="hobbies_5_corps">
+					Le webdesign m'intéresse beaucoup. Je peux 
+					passe des heures à changer l'apparence des 
+					plateformes que j'utilise (tumblr, wordpress, etc).
+				</div>	
+			</div>
+			
+		</div>
+		<div class="contact">
+				<div class="contact_titre">Contact</div>
+				<div class="contact_1">
+					<img class="contact_1_img" src="img/icone_mail.png" >
+					<div class="contact_1_adresse">emilievillapro@gmail.com</div>
+				</div>
+				<div class="contact_2">
+					<img class="contact_2_img" src="img/icone_linkedin.png">
+					<div class="contact_2_adresse"><a href="https://www.linkedin.com/in/emilie-villa/" target="_blank">Emilie Villa</a></div>
+				</div>
+			</div>
+			
+	
+		<script> 
+			function myFunction() {
+				document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+			}
+		</script>
+		<script>
+			function darkSide() {
+				document.getElementById("titre").style.display = "none";
+				document.getElementById("titre_darkSide").style.display = "block";
+				document.getElementsByClassName("accueil_banniere")[0].style.backgroundImage = "url('img/accueil_darkSide.jpg')";
+				document.getElementsByClassName("hobbies_1_image")[0].src = "img/hobbies_guitare_dark.jpg";
+				document.getElementsByClassName("hobbies_2_image")[0].src = "img/hobbies_camera_dark.png";
+				document.getElementsByClassName("hobbies_3_image")[0].src = "img/hobbies_dessin_dark.png";
+				document.getElementsByClassName("hobbies_4_image")[0].src = "img/hobbies_photo_dark.png";
+				document.getElementsByClassName("hobbies_5_image")[0].src = "img/hobbies_design_dark.png";
+				document.body.style.backgroundColor = "black";
+				document.getElementsByClassName("leLien")[0].style.color = "red";
+				document.getElementsByClassName("leLien")[1].style.color = "red";
+				document.getElementsByClassName("leLien")[2].style.color = "red";
+				document.getElementsByClassName("leLien")[3].style.color = "red";
+				document.body.style.color = "white";
+				document.getElementsByClassName("topnav")[0].style.backgroundColor = "white";
+				document.getElementsByClassName("contact")[0].style.backgroundColor = "white";
+				document.getElementsByClassName("hobbies_darkside")[0].style.color = "red";
+			}
+		</script>
+	</body>
+</html>

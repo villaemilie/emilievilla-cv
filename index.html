@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Emilie Villa</title>
+	</head>
+	<body>
+		<div class="accueil_banniere">
+			<h1>Emilie Villa</h1>
+		</div>
+		<div class="menu">
+			<ul id="menu" class="topnav">
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="experiences.html">Experiences</a></li>
+				<li><a href="formations.html">Formations</a></li>
+				<li><a href="hobbies.html">Hobbies</a></li>
+				<li class="icon"><a onclick="myFunction()">&#9776;</a></li>
+			</ul>
+		</div>
+		
+		<div class="accueil_bloc">
+		<div class="espace-con"></div>
+			<div class="accueil_bloc-1">
+				<div class="accueil_bloc-1_titre">
+					<h2>Qui suis-je ?</h2>
+				</div>
+				<div class="accueil_bloc-1_corps">
+					<img src="img/emilieiphone.jpg" class="accueil_bloc-1_corps_photo">
+					<p class="accueil_bloc-1_corps_paragraphe">Etudiante en Master 1 Marketing Digital 
+					et Réseaux Sociaux à Sup de Pub Bordeaux, je suis à la recherche d'une alternance pour effectuer mon Master 2 dès octobre 2018. 
+					Bordelaise d'adoption, j'ai quitté ma Lorraine natale il y a quelques mois 
+					afin de me donner toutes les chances de devenir une experte en digital.</p>
+				</div>
+			</div>
+			<div class="espace-con"></div>
+			<div class="accueil_bloc-2">
+				<div class="accueil_bloc-2_titre">
+					<h2>Mes missions ?</h2>
+				</div>
+				<div class="accueil_bloc-2_corps">
+					<ul>
+						<li>Gestion de projet événementiel</li>
+						<li>Gestion de projet web</li>
+						<li>Community Management</li>
+						<li>Rédaction web</li>
+						<li>Benchmark</li>
+						<li>Gestion/relation client</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="accueil_bloc-3">
+				<div class="accueil_bloc-3_titre">
+					<h2>Mes compétences ?</h2>
+				</div>
+				<div class="accueil_bloc-3_corps">
+					<ul>
+						<li>Marketing Digital</li>
+						<li>Communication des Organisations</li>
+						<li>Stratégie de Communication</li>
+						<li>Réseaux Sociaux</li>
+						<li>Rédaction web</li>
+						<li>Webmarketing</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+			<div id="map"></div>
+			<div class="contact">
+				<div class="contact_titre">Contact</div>
+				<div class="contact_1">
+					<img class="contact_1_img" src="img/icone_mail.png" >
+					<div class="contact_1_adresse">emilievillapro@gmail.com</div>
+				</div>
+				<div class="contact_2">
+					<img class="contact_2_img" src="img/icone_linkedin.png">
+					<div class="contact_2_adresse"><a href="https://www.linkedin.com/in/emilie-villa/" target="_blank">Emilie Villa</a></div>
+				</div>
+			</div>
+			
+		
+		<script> 
+			function myFunction() {
+				document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+			}
+		</script>
+		
+		
+		<script>
+			function initMap() {
+				var Maison = {lat: 44.8842621, lng: -0.6025407};
+				var map = new google.maps.Map(document.getElementById('map'), {
+					zoom: 16,
+					center: Maison
+				});
+				var marker = new google.maps.Marker({
+					position: Maison,
+					map: map
+				});
+			}
+		</script>
+		
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDi22n2Cf-tzM50fHc94-bi-IsPXpiuAic&callback=initMap">
+		</script>
+	</body>
+</html>

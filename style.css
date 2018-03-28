@@ -1,0 +1,546 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face {
+    font-family: Notera;
+    src: url(polices/Notera.otf);
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(polices/Quicksand_Book.otf);
+}
+
+@font-face {
+    font-family: Quicksand_Gras;
+    src: url(polices/Quicksand_Bold.otf);
+}
+
+@font-face {
+    font-family: StarWars;
+    src: url(polices/Starjedi.ttf);
+}
+
+
+h1
+{
+	font-family : Autumn Chant;
+	vertical-align:middle;
+	text-align:center;
+	font-weight : bold;
+	font-size : 35px;
+}
+
+#titre_darkSide
+{
+	font-size : 40px;
+	color : black;
+	letter-spacing : 6px;
+	vertical-align:middle;
+	text-align:center;
+	font-family : StarWars;
+	display : none;
+	text-shadow: #ffe81f 2px 2px, #ffe81f -2px 2px, #ffe81f -2px -2px, #ffe81f 2px -2px;
+}
+
+.espace-con
+{
+	display : inline-block;
+	position : relative;
+	min-height : 100px;
+	width : 340px;
+}
+
+@media screen and (max-width:1485px) 
+{
+	.espace-con
+	{
+		width : 200px;
+	}
+}
+
+@media screen and (max-width:1185px) 
+{
+	.espace-con
+	{
+		display: none;
+	}
+}
+
+
+.accueil_banniere
+{
+	line-height:150px; 
+	text-align:center;
+	height:150px;
+	background-image: url(img/accueil_fond.png);
+}
+
+.accueil_bloc
+{
+	font-size : 17px;
+	margin-top:15px;
+	text-align : center;
+}
+.accueil_bloc-1
+{
+	font-family : Quicksand;
+	display: inline-block;
+	width:98%;
+	padding : 20px;
+	max-width : 750px;
+	text-align:center;
+	margin-bottom : 20px;
+	
+}
+.accueil_bloc-1_titre
+{
+	font-family : Notera;
+    font-size : 23px;
+	text-align:center;
+	margin-bottom : 30px;
+}
+
+.accueil_bloc-1_corps_photo
+{
+	display:block;
+	float:left;
+	margin-right : 50px;
+    height:430px;
+    padding-left: 100px; 
+     
+   
+}
+.accueil_bloc-1_corps_paragraphe
+{
+	padding : 105px; 
+	text-align : justify;
+	display: block;
+    line-height : 20px;
+}
+
+.accueil_bloc-2
+{
+	margin-top : 15px;
+	margin-bottom : 15px;
+	display: inline-block;
+	width:50%;
+	text-align : center;
+	max-width:450px;
+	font-family : Quicksand;
+	
+}
+
+.accueil_bloc-2_titre
+{
+	text-align:center;
+	margin-bottom : 16px;
+	font-family : Notera;
+    font-size : 21px;
+}
+
+.accueil_bloc-2_corps ul li
+{
+	line-height : 22px;
+	list-style-type: none;
+	text-align : center;
+}
+
+.accueil_bloc-3
+{
+	font-family : Quicksand;
+	margin-top : 5px;
+	margin-bottom : 15px;
+	display: inline-block;
+	width:49%;
+	text-align:center;
+	max-width:450px;
+}
+
+.accueil_bloc-3_titre
+{
+	font-family : Notera;
+	text-align:center;
+	margin-bottom : 15px;
+    font-size : 21px;
+}
+
+.accueil_bloc-3_corps ul li
+{
+	line-height : 22px;
+	list-style-type: none;
+	text-align : center;
+}
+
+@media screen and (max-width:680px) {
+	.accueil_bloc-1
+	{
+		width : 90%;
+	}
+	.accueil_bloc-2
+	{
+		width : 50%;
+	}
+	.accueil_bloc-3
+	{
+		width : 49%;
+	}
+	
+	.accueil_bloc-1_corps_photo
+	{
+		display:block;
+		float:none;
+		margin : auto;
+		max-width : 250px;
+		width : 100%;
+		margin-bottom : 10px;
+	}
+}
+
+
+@media screen and (max-width:600px) {
+	.accueil_bloc-2
+	{
+		width : 95%;
+	}
+	.accueil_bloc-3
+	{
+		width : 95%;
+	}
+
+}
+
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+	text-align : center;
+    
+}
+
+ul.topnav li {
+	text-align : center;
+	display : inline-block;
+	}
+
+	
+ul.topnav li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 17px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+	text-transform: uppercase;
+	font-family : Adam;
+	font-weight: bold;
+}
+
+ul.topnav li a:hover 
+{
+	color : #95ACBC;
+}
+	
+
+ul.topnav li.icon 
+{
+	display: none;
+}
+
+#menu
+{
+	position: relative;
+	top:0;
+	left:0;
+	width: 100%;
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:nth-last-child(1)) 
+  {
+	  display: none;
+	  }
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {
+	  position: relative;
+	  }
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    
+  }
+}
+
+#map 
+{
+	margin-top:35px;
+	height: 400px;
+	width: 100%;
+}
+
+.contact
+{
+	color : black;
+	font-size : 18px;
+	width : 100%;
+	background-color: #95ACBC;
+	display : inline-block;
+	font-family : Quicksand;
+	text-align : center;
+}
+.contact_1
+{
+	color : black;
+	text-align : center;
+	display : inline-block;
+	width : 49%;
+	margin-top : 15px;
+	margin-bottom : 15px;
+	max-width:350px;
+}
+.contact_2
+{
+	color : black;
+	text-align : center;
+	display : inline-block;
+	width : 49%;
+	margin-top : 15px;
+	margin-bottom : 15px;
+	max-width:350px;
+}
+
+.contact_2_adresse a
+{
+	color : black;
+	transition: 0.3s;
+	text-decoration : none;
+}
+.contact_2_adresse a:hover
+{
+	color : #e0e0eb;
+	text-decoration : none;
+}
+
+
+.contact_titre
+{
+	margin-top : 15px;
+    font-size: 35px; 
+	display : inline-block;
+	width : 100%;
+	font-family : Notera;
+	font-weight : bold;
+	text-align : center;
+}
+
+.contact_1_img
+{
+	height : 32px;
+}
+.contact_2_img
+{
+	height : 32px;
+}
+
+@media screen and (max-width:480px) {
+	.contact_1
+	{
+		width : 100%;
+	}
+	.contact_2 
+	{
+		width : 100%;
+	}
+}
+
+.texte_gras
+{
+	font-family : Quicksand_Gras;
+    text-align : center; 
+    margin-bottom: 15px; 
+}
+.hobbies_darkside
+{
+	color : blue;
+	font-weight : bold;
+	cursor: pointer;
+}
+
+.experiences, .formations, .hobbies
+{
+	font-size : 35px;
+	font-family : Notera;
+	margin-top : 15px;
+	margin-bottom : 40px;
+	width : 100%;
+	text-align : center;
+	font-weight : bold;
+}
+
+.experiences_bloc, .formations_bloc
+{
+	max-width:1200px;
+	margin-top : 20px;
+	display : flex;
+	text-align : center;
+	margin:0 auto;
+	flex-wrap: wrap;
+	margin-bottom : 45px;
+	font-family : Quicksand;
+    line-height : 20px;
+    padding-left : 20px; 
+
+}
+
+.hobbies_bloc
+{
+	max-width:1200px;
+	margin-top : 20px;
+	display : flex;
+	text-align : center;
+	margin:0 auto;
+	flex-wrap: wrap;
+	margin-bottom : 45px;
+	font-family : Quicksand;
+    line-height : 20px;
+    padding-left : 10px; 
+
+}
+
+.experiences_1_corps, .experiences_2_corps, .experiences_3_corps
+{
+	margin-bottom : 30px;
+    line-height : 20px;
+    text-align : justify;
+    
+}
+
+ .formations_1_corps,  .formations_2_corps,  .formations_3_corps
+{
+	margin-bottom : 30px;
+    line-height : 20px;
+    text-align : justify;
+    
+}
+
+.experiences_1, .formations_1
+{
+	margin : 10px;
+	width : 31%;
+    text-align : center;
+}
+.experiences_1_tete, .experiences_2_tete, .experiences_3_tete
+{
+	margin-bottom : 20px;
+	font-family : Quicksand_Gras;
+}
+
+.experiences_1_image
+{
+	width : 350px;
+	margin-bottom : 15px;
+}
+
+.formations_1_image
+{
+	width : 350px;
+    margin-bottom : 15px;
+}
+
+.experiences_2, .formations_2
+{
+	margin : 10px;
+	width : 31%;
+}
+
+.formations_2_image
+{
+	width : 375px;
+    margin-bottom : 15px;
+}
+
+.formations_3_image
+{
+	width : 346px;
+    margin-bottom : 15px;
+}
+
+
+.experiences_2_image
+{
+	width : 350px;
+	margin-bottom : 15px;
+}
+
+.experiences_3, .formations_3
+{
+	margin : 10px;
+	width : 31%;
+}
+
+.experiences_3_image
+{
+	height : 232px;
+	margin-bottom : 15px;
+}
+
+
+@media screen and (max-width:875px) {
+	.experiences_1, .experiences_2, .formations_1, .formations_2
+	{
+		width : 45%;
+	}
+	.experiences_3, .formations_3
+	{
+		max-width:300px;
+		width : 100%;
+		margin : 0 auto;
+	} 
+}
+
+@media screen and (max-width:630px) {
+.experiences_1, .experiences_2, .formations_1, .formations_2
+	{
+		width : 100%;
+		max-width : 420px;
+		margin : 0 auto;
+	}
+}
+
+.hobbies_1_image, .hobbies_2_image, .hobbies_3_image, .hobbies_4_image, .hobbies_5_image
+{
+	height : 50px;
+	margin-bottom : 15px; 
+}
+
+
+.hobbies_1, .hobbies_2, .hobbies_3, .hobbies_4, .hobbies_5
+{
+	padding : 5px;
+	max-width : 220px;
+	margin: 0 auto;
+	margin-bottom : 15px;
+    line-height : 20px;
+}
+
